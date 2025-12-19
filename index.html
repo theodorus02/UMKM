@@ -1,48 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laundry Bersih</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMKM Pro – Solusi Bisnis Modern</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="logo">Laundry Bersih</div>
-  <a href="#kontak" class="btn-small">Pesan</a>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">UMKM<span>Pro</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#harga">Harga</a>
+    <a href="#kontak" class="btn-nav">Konsultasi</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <h1>Laundry Cepat & Wangi</h1>
-  <p>Solusi cuci bersih untuk kebutuhan harian Anda</p>
-  <a href="https://wa.me/6281234567890" class="btn">Pesan via WhatsApp</a>
-</section>
-
-<section class="section">
-  <h2>Layanan Kami</h2>
-  <div class="grid">
-    <div class="card">Cuci Kiloan</div>
-    <div class="card">Cuci Sepatu</div>
-    <div class="card">Setrika Rapi</div>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-box">
+    <h1>Website Modern & Mewah<br>Untuk UMKM</h1>
+    <p>Tingkatkan kepercayaan pelanggan dan penjualan bisnis Anda</p>
+    <button onclick="pesan('Konsultasi UMKM')" class="btn-primary">
+      Konsultasi WhatsApp
+    </button>
   </div>
 </section>
 
+<!-- LAYANAN -->
+<section id="layanan" class="section">
+  <h2>Layanan Unggulan</h2>
+  <div class="grid">
+    <div class="card">🌐<h3>Website Profesional</h3><p>Desain modern & responsif</p></div>
+    <div class="card">📱<h3>Mobile Friendly</h3><p>Nyaman di semua perangkat</p></div>
+    <div class="card">⚡<h3>Loading Cepat</h3><p>Optimasi performa maksimal</p></div>
+    <div class="card">💬<h3>WhatsApp Otomatis</h3><p>Langsung terhubung ke pelanggan</p></div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
 <section class="section soft">
-  <h2>Kenapa Pilih Kami?</h2>
-  <ul>
-    <li>✔ Proses cepat</li>
-    <li>✔ Wangi tahan lama</li>
-    <li>✔ Harga terjangkau</li>
-  </ul>
+  <h2>Kenapa UMKM Memilih Kami?</h2>
+  <div class="features">
+    <div>✔ Desain Eksklusif</div>
+    <div>✔ Harga Transparan</div>
+    <div>✔ Siap Online</div>
+    <div>✔ Support Mudah</div>
+  </div>
 </section>
 
+<!-- HARGA -->
+<section id="harga" class="section">
+  <h2>Paket Harga</h2>
+  <div class="pricing">
+
+    <div class="price-card">
+      <h3>UMKM</h3>
+      <p class="price">Rp 750.000</p>
+      <ul>
+        <li>✔ 1 Halaman</li>
+        <li>✔ WhatsApp</li>
+        <li>✔ Mobile Friendly</li>
+      </ul>
+      <button onclick="pesan('Paket UMKM')">Pesan</button>
+    </div>
+
+    <div class="price-card best">
+      <span class="badge">Best Seller</span>
+      <h3>Bisnis</h3>
+      <p class="price">Rp 1.500.000</p>
+      <ul>
+        <li>✔ Multi Section</li>
+        <li>✔ Animasi</li>
+        <li>✔ SEO Dasar</li>
+      </ul>
+      <button onclick="pesan('Paket Bisnis')">Pesan</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Premium</h3>
+      <p class="price">Rp 3.000.000</p>
+      <ul>
+        <li>✔ Desain Eksklusif</li>
+        <li>✔ Custom Fitur</li>
+        <li>✔ Support</li>
+      </ul>
+      <button onclick="pesan('Paket Premium')">Pesan</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section soft">
+  <h2>Apa Kata Klien</h2>
+  <div class="grid">
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<p>Penjualan meningkat drastis</p></div>
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<p>Tampilan sangat profesional</p></div>
+    <div class="card">⭐️⭐️⭐️⭐️⭐️<p>Mudah digunakan UMKM</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
 <section id="kontak" class="cta">
-  <h2>Butuh Laundry Hari Ini?</h2>
-  <a href="https://wa.me/6281234567890" class="btn">Chat WhatsApp</a>
+  <h2>Siap Naik Kelas?</h2>
+  <p>Mulai website profesional hari ini</p>
+  <button onclick="pesan('Website UMKM')" class="btn-primary">
+    Chat WhatsApp
+  </button>
 </section>
 
-<footer>© 2025 Laundry Bersih</footer>
+<footer>
+  © 2025 UMKM Pro • Website Premium
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
